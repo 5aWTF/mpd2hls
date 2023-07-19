@@ -26,9 +26,7 @@ chmod +x stop.sh
 chmod +x restart.sh
 ```
 
-4. **
-
-Usage:**
+4. **Usage:**
 
 The usage of the scripts remains the same as explained in the previous guide. Now, you can run multiple instances of the `download_and_convert.sh` script simultaneously, each processing different URLs and keys independently without interfering with each other. Each instance will have its unique identifier and temporary directory to manage the processes effectively.
 
