@@ -4,7 +4,7 @@
 
 Ensure you have the required dependencies installed on your Linux system. You need `N_m3u8DL-RE` and `ffmpeg`:
 
-- For `N_m3u8DL-RE`, you need to install it separately. You can follow the instructions for installation from its official repository or website.
+- For `N_m3u8DL-RE`, you need to install it separately. You can follow the instructions for installation from its official repository - https://github.com/nilaoda/N_m3u8DL-RE.
 
 - For `ffmpeg`, you can install it using the package manager of your Linux distribution. For example, on Ubuntu or Debian, you can run:
 
