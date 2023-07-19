@@ -67,7 +67,7 @@ mkdir -p "$FOLDER" "$TEMP_DIR"
 
 # Replace "url" and "keyID:key" with the provided arguments
 COMMAND_1="N_m3u8DL-RE --save-dir $FOLDER --del-after-done true --save-name $FILE --tmp-dir $TEMP_DIR $URL --live-real-time-merge true --thread-count 1 --live-wait-time 2 --live-keep-segments false --mp4-real-time-decryption true --live-pipe-mux true -sv best -sa all --key $KEY --use-system-proxy true --custom-proxy xxx.xxx.xxx.xxx:xx -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36'"
-COMMAND_2="ffmpeg -re -i \"stream/$FOLDER/$FILE.ts\" -c copy -f hls -sc_threshold 0 -pix_fmt yuv420p -attempt_recovery 1 -recovery_wait_time 1 -hls_flags delete_segments -hls_time 2 -hls_list_size 20 \"/var/www/html/$FILE.m3u8\""
+COMMAND_2="ffmpeg -re -i \"$FOLDER/$FILE.ts\" -c copy -f hls -sc_threshold 0 -pix_fmt yuv420p -attempt_recovery 1 -recovery_wait_time 1 -hls_flags delete_segments -hls_time 2 -hls_list_size 20 \"/var/www/html/$FILE.m3u8\""
 
 # Execute the commands and save the process IDs to files
 eval "$COMMAND_1 &"
