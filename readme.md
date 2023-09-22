@@ -1,4 +1,4 @@
-**Pushed updated provided by omariobros**
+**Pushed updated provided by omariobros - https://github.com/omariobros/mpd2hls_v2/tree/main**
 
 1. **Install Dependencies:**
 
